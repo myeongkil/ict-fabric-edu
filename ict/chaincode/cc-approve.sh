@@ -22,7 +22,6 @@ $bindir/peer lifecycle chaincode approveformyorg \
 --version 1.0 \
 --package-id ict-auction-cc_1.0 \
 --sequence 1 \
---signature-policy "OR('DaeguMSP.member', 'PohangMSP.member')" \
 --connTimeout 15s
 
 $bindir/peer lifecycle chaincode checkcommitreadiness \
@@ -51,7 +50,6 @@ $bindir/peer lifecycle chaincode approveformyorg \
 --version 1.0 \
 --package-id ict-auction-cc_1.0 \
 --sequence 1 \
---signature-policy "OR('DaeguMSP.member', 'PohangMSP.member')" \
 --connTimeout 15s
 
 $bindir/peer lifecycle chaincode checkcommitreadiness \

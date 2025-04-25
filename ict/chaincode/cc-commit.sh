@@ -21,7 +21,6 @@ $bindir/peer lifecycle chaincode commit \
 --name ict-auction-cc \
 --version 1.0 \
 --sequence 1 \
---signature-policy "OR('DaeguMSP.member', 'PohangMSP.member')" \
 --peerAddresses localhost:7051 \
 --tlsRootCertFiles "$shdir/../cryptogen/crypto-config/peerOrganizations/daegu.ictcog.or.kr/tlsca/tlsca.daegu.ictcog.or.kr-cert.pem" \
 --peerAddresses localhost:9051 \
