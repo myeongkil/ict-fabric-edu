@@ -1,0 +1,40 @@
+# Copyright IBM Corp. All Rights Reserved.
+#
+# SPDX-License-Identifier: Apache-2.0
+#
+
+OrdererOrgs:
+  - Name: Orderer
+    Domain: ictcog.or.kr
+    EnableNodeOUs: true
+    Specs:
+      - Hostname: orderer1
+        SANS:
+          - localhost
+      - Hostname: orderer2
+        SANS:
+          - localhost
+      - Hostname: orderer3
+        SANS:
+          - localhost
+
+PeerOrgs:
+  - Name: daegu
+    Domain: daegu.ictcog.or.kr
+    EnableNodeOUs: true
+    Template:
+      Count: 3
+      SANS:
+        - localhost
+    Users:
+      Count: 1
+
+  - Name: pohang
+    Domain: pohang.ictcog.or.kr
+    EnableNodeOUs: true
+    Template:
+      Count: 3
+      SANS:
+        - localhost
+    Users:
+      Count: 1
